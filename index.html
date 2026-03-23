@@ -33,7 +33,7 @@
   --text:#E2D8CC; --muted:#6E665D; --dim:#2A2530;
   --amber:#C4883A; --amber2:#E0A860; --amber-dim:rgba(196,136,58,0.12);
   --silver:#8BAEC4; --purple:#9B8EC4; --green:#7AAE8B;
-  --border:rgba(226,216,204,0.06); --border2:rgba(226,216,204,0.12);
+  --border:rgba(226,216,204,0.06); --border2:rgba(226,216,204,0.25);
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;font-size:16px;line-height:1.8;overflow-x:hidden}
@@ -71,14 +71,14 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .h1-line:nth-child(1){animation:fadeUp 1s 0.6s forwards}
 .h1-line:nth-child(2){animation:fadeUp 1s 0.85s forwards}
 .h1-line:nth-child(3){animation:fadeUp 1s 1.1s forwards}
-.hero-sub{font-size:18px;font-weight:300;color:rgba(226,216,204,0.5);max-width:500px;margin-bottom:56px;line-height:1.8;opacity:0;animation:fadeUp 1s 1.35s forwards}
+.hero-sub{font-size:18px;font-weight:300;color:rgba(226,216,204,0.7);max-width:500px;margin-bottom:56px;line-height:1.8;opacity:0;animation:fadeUp 1s 1.35s forwards}
 .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeUp 1s 1.55s forwards}
 .btn-primary{display:inline-flex;align-items:center;gap:12px;background:var(--amber);color:#1A0E00;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:17px 38px;border-radius:2px;text-decoration:none;border:none;transition:all 0.2s;box-shadow:0 8px 32px rgba(196,136,58,0.25)}
 .btn-primary:hover{opacity:.88;transform:translateY(-1px);box-shadow:0 12px 40px rgba(196,136,58,0.35)}
-.btn-ghost{display:inline-flex;align-items:center;gap:10px;background:transparent;color:rgba(226,216,204,0.5);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:17px 32px;border-radius:2px;text-decoration:none;border:1px solid var(--border2);transition:all 0.2s}
-.btn-ghost:hover{border-color:rgba(226,216,204,0.3);color:var(--text)}
+.btn-ghost{display:inline-flex;align-items:center;gap:10px;background:transparent;color:rgba(226,216,204,0.7);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:17px 32px;border-radius:2px;text-decoration:none;border:1px solid var(--border2);transition:all 0.2s}
+.btn-ghost:hover{border-color:rgba(226,216,204,0.75);color:var(--text)}
 .hero-trust{display:flex;align-items:center;gap:32px;margin-top:64px;opacity:0;animation:fadeUp 1s 1.8s forwards}
-.hero-trust-item{display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.28);letter-spacing:1.5px;text-transform:uppercase}
+.hero-trust-item{display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.7);letter-spacing:1.5px;text-transform:uppercase}
 .hero-trust-item::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--amber);opacity:.5;flex-shrink:0}
 
 
@@ -87,21 +87,21 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .problem{padding:130px 0}
 .problem-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,46px);font-weight:300;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:28px}
 .problem-quote strong{font-style:normal;font-weight:500}
-.problem-body{font-size:17px;color:rgba(226,216,204,0.5);max-width:580px;line-height:1.9}
+.problem-body{font-size:17px;color:rgba(226,216,204,0.7);max-width:580px;line-height:1.9}
 .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:80px}
 .stat-cell{padding:44px 38px;background:var(--bg)}
 .stat-num{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,5.5vw,72px);font-weight:300;color:var(--text);line-height:1;margin-bottom:12px;display:flex;align-items:flex-start;gap:3px}
 .stat-num sup{font-size:.38em;margin-top:10px;color:var(--amber)}
-.stat-label{font-size:13px;color:rgba(226,216,204,0.4);line-height:1.7;font-weight:300}
-.stat-source{font-family:'IBM Plex Mono',monospace;font-size:9px;color:rgba(226,216,204,0.55);letter-spacing:1.5px;margin-top:10px;text-transform:uppercase}
+.stat-label{font-size:13px;color:rgba(226,216,204,0.62);line-height:1.7;font-weight:300}
+.stat-source{font-family:'IBM Plex Mono',monospace;font-size:9px;color:rgba(226,216,204,0.75);letter-spacing:1.5px;margin-top:10px;text-transform:uppercase}
 
 /* ── HOW IT WORKS ───────────────────── */
 .how{padding:120px 0}
 .how-phases{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:64px}
 .how-phase{padding:50px 40px;background:var(--bg);position:relative}
-.phase-num{font-family:'Cormorant Garamond',serif;font-size:90px;font-weight:300;color:rgba(226,216,204,0.05);line-height:1;margin-bottom:20px}
+.phase-num{font-family:'Cormorant Garamond',serif;font-size:90px;font-weight:300;color:rgba(226,216,204,0.18);line-height:1;margin-bottom:20px}
 .phase-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;margin-bottom:14px;color:var(--text)}
-.phase-body{font-size:14px;color:rgba(226,216,204,0.45);line-height:1.85;font-weight:300}
+.phase-body{font-size:14px;color:rgba(226,216,204,0.65);line-height:1.85;font-weight:300}
 .phase-tag{display:inline-block;margin-top:20px;font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:2px;text-transform:uppercase}
 .phase-arrow{position:absolute;right:-1px;top:50%;transform:translateY(-50%);z-index:2;width:18px;height:18px;background:var(--bg);display:flex;align-items:center;justify-content:center}
 .phase-arrow::after{content:'';width:7px;height:7px;border-top:1px solid var(--border2);border-right:1px solid var(--border2);transform:rotate(45deg)}
@@ -114,10 +114,10 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .dive-card:hover{background:var(--bg2)}
 .dive-icon{font-size:28px;margin-bottom:24px;display:block}
 .dive-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;margin-bottom:14px;color:var(--text)}
-.dive-body{font-size:14px;color:rgba(226,216,204,0.5);line-height:1.9;margin-bottom:28px;font-weight:300}
+.dive-body{font-size:14px;color:rgba(226,216,204,0.7);line-height:1.9;margin-bottom:28px;font-weight:300}
 .dive-study{background:rgba(196,136,58,0.06);border:1px solid rgba(196,136,58,0.15);border-radius:4px;padding:16px 18px;margin-top:auto}
 .dive-study-ref{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
-.dive-study-text{font-size:13px;color:rgba(226,216,204,0.55);line-height:1.7;font-style:italic}
+.dive-study-text{font-size:13px;color:rgba(226,216,204,0.75);line-height:1.7;font-style:italic}
 .dive-study-stat{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--text);line-height:1;margin-bottom:6px}
 
 /* ── SCIENCE ────────────────────────── */
@@ -131,10 +131,10 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .study-col{padding:28px 28px;border-right:1px solid var(--border)}.study-col:last-child{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
 .study-col:last-child{border-right:none}
 .study-ref{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:1px;text-transform:uppercase;line-height:1.6;display:block;margin-bottom:6px}
-.study-authors{font-size:12px;color:rgba(226,216,204,0.3)}
+.study-authors{font-size:12px;color:rgba(226,216,204,0.75)}
 .study-finding{font-size:14px;color:rgba(226,216,204,0.7);line-height:1.8;font-weight:300}
 .study-stat-big{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--text);line-height:1;display:block;margin-bottom:8px;white-space:nowrap;text-align:center;width:100%}
-.study-stat-label{font-size:9.5px;color:rgba(226,216,204,0.35);line-height:1.5;font-family:'IBM Plex Mono',monospace;letter-spacing:0.5px;text-align:center;word-break:break-word}
+.study-stat-label{font-size:9.5px;color:rgba(226,216,204,0.6);line-height:1.5;font-family:'IBM Plex Mono',monospace;letter-spacing:0.5px;text-align:center;word-break:break-word}
 
 /* ── PRICING ────────────────────────── */
 .pricing{padding:120px 0}
@@ -142,17 +142,17 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .price-card{padding:40px 32px;background:var(--bg);position:relative;display:flex;flex-direction:column}
 .price-card.featured{background:var(--bg2)}
 .price-card.featured::before{content:'MOST POPULAR';position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--amber);color:#1A0E00;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:2px;padding:4px 14px;border-radius:20px;white-space:nowrap}
-.price-tier{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:rgba(226,216,204,0.4);margin-bottom:20px}
+.price-tier{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:rgba(226,216,204,0.62);margin-bottom:20px}
 .price-amount{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--text);line-height:1;margin-bottom:6px}
-.price-amount span{font-size:15px;font-family:'DM Sans',sans-serif;font-weight:300;color:rgba(226,216,204,0.4)}
-.price-desc{font-size:13px;color:rgba(226,216,204,0.4);margin-bottom:28px;line-height:1.7;font-weight:300;min-height:52px}
+.price-amount span{font-size:15px;font-family:'DM Sans',sans-serif;font-weight:300;color:rgba(226,216,204,0.62)}
+.price-desc{font-size:13px;color:rgba(226,216,204,0.62);margin-bottom:28px;line-height:1.7;font-weight:300;min-height:52px}
 .price-divider{height:1px;background:var(--border);margin-bottom:24px}
 .price-features{flex:1;display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
 .pf{display:flex;flex-wrap:wrap;align-items:center;gap:0 10px;font-size:13px;color:rgba(226,216,204,0.6);line-height:1.5;font-weight:300;padding:4px 0;cursor:pointer}
-.pf.dim{color:rgba(226,216,204,0.2)}
+.pf.dim{color:rgba(226,216,204,0.65)}
 .pf-check{color:var(--amber);font-size:12px;flex-shrink:0;margin-top:2px}
-.pf.dim .pf-check{color:rgba(226,216,204,0.15)}
-.price-btn{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:14px;border:1px solid var(--border2);background:transparent;color:rgba(226,216,204,0.5);cursor:none;border-radius:2px;transition:all 0.2s;margin-top:auto}
+.pf.dim .pf-check{color:rgba(226,216,204,0.6)}
+.price-btn{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:14px;border:1px solid var(--border2);background:transparent;color:rgba(226,216,204,0.7);cursor:none;border-radius:2px;transition:all 0.2s;margin-top:auto}
 .price-btn:hover{border-color:var(--amber);color:var(--amber)}
 .price-card.featured .price-btn{background:var(--amber);border-color:var(--amber);color:#1A0E00}
 .price-card.featured .price-btn:hover{opacity:.88}
@@ -162,14 +162,14 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .pf.expandable{cursor:pointer}
 .pf.expandable:hover .pf-label{color:var(--text)}
 .pf-label{font-size:13px;color:rgba(226,216,204,0.6);font-weight:300;transition:color 0.2s;line-height:1.5;flex:1}
-.pf.dim .pf-label{color:rgba(226,216,204,0.2)}
+.pf.dim .pf-label{color:rgba(226,216,204,0.65)}
 .pf-expand-icon{flex-shrink:0;width:14px;height:14px;margin-left:auto;margin-top:2px;display:flex;align-items:center;justify-content:center;opacity:0.35;transition:transform 0.25s,opacity 0.2s;font-size:10px;color:var(--amber)}
 .pf.open .pf-expand-icon{transform:rotate(45deg);opacity:0.8}
-.pf-desc{font-size:12px;color:rgba(226,216,204,0.38);line-height:1.75;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding-top 0.2s;padding-left:22px;font-weight:300;font-style:italic;width:100%;flex-basis:100%}
+.pf-desc{font-size:12px;color:rgba(226,216,204,0.6);line-height:1.75;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding-top 0.2s;padding-left:22px;font-weight:300;font-style:italic;width:100%;flex-basis:100%}
 .pf.open .pf-desc{max-height:300px;padding-left:22px;padding-top:8px;padding-bottom:4px}
 
-.price-note{text-align:center;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.2);letter-spacing:1px}
-.annual-note{text-align:center;margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.3);letter-spacing:1px}
+.price-note{text-align:center;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.65);letter-spacing:1px}
+.annual-note{text-align:center;margin-top:28px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.75);letter-spacing:1px}
 
 /* ── TESTIMONIALS ───────────────────── */
 .testimonials{padding:120px 0}
@@ -180,7 +180,7 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .testi-author{display:flex;align-items:center;gap:14px}
 .testi-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:500;flex-shrink:0}
 .testi-name{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px}
-.testi-role{font-family:'IBM Plex Mono',monospace;font-size:9px;color:rgba(226,216,204,0.3);letter-spacing:1.5px;text-transform:uppercase}
+.testi-role{font-family:'IBM Plex Mono',monospace;font-size:9px;color:rgba(226,216,204,0.75);letter-spacing:1.5px;text-transform:uppercase}
 .testi-stars{display:flex;gap:3px;margin-bottom:18px}
 .star{width:12px;height:12px;background:var(--amber);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
 
@@ -196,38 +196,38 @@ h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;line-he
 .faq-item.open .faq-icon{background:var(--amber);border-color:var(--amber);color:#1A0E00;transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s}
 .faq-item.open .faq-a{max-height:400px}
-.faq-a-inner{padding:0 36px 28px;font-size:15px;color:rgba(226,216,204,0.5);line-height:1.9;font-weight:300}
+.faq-a-inner{padding:0 36px 28px;font-size:15px;color:rgba(226,216,204,0.7);line-height:1.9;font-weight:300}
 .faq-a-inner a{color:var(--amber);text-decoration:none}
 
 /* ── WAITLIST ───────────────────────── */
 .waitlist{padding:160px 0;text-align:center;position:relative;overflow:hidden}
 .waitlist-orb{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(196,136,58,0.06) 0%,transparent 65%);pointer-events:none}
-.waitlist-count{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(226,216,204,0.3);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:10px}
+.waitlist-count{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(226,216,204,0.75);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:10px}
 .waitlist-count::before,.waitlist-count::after{content:'';flex:1;max-width:60px;height:1px;background:var(--border2)}
 .waitlist h2{margin-bottom:16px;font-size:clamp(40px,5vw,72px)}
-.waitlist-sub{font-size:17px;color:rgba(226,216,204,0.4);max-width:460px;margin:0 auto 52px;line-height:1.8;font-weight:300}
+.waitlist-sub{font-size:17px;color:rgba(226,216,204,0.62);max-width:460px;margin:0 auto 52px;line-height:1.8;font-weight:300}
 .waitlist-form{display:flex;align-items:stretch;max-width:500px;margin:0 auto 16px;border:1px solid var(--border2)}
 .waitlist-form input{flex:1;background:transparent;border:none;outline:none;font-family:'DM Sans',serif;font-size:16px;font-weight:300;color:var(--text);padding:18px 24px;caret-color:var(--amber)}
-.waitlist-form input::placeholder{color:rgba(226,216,204,0.2)}
+.waitlist-form input::placeholder{color:rgba(226,216,204,0.65)}
 .waitlist-form button{background:var(--amber);color:#1A0E00;border:none;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;padding:18px 28px;transition:opacity 0.2s;white-space:nowrap}
 .waitlist-form button:hover{opacity:.88}
-.waitlist-note{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.2);letter-spacing:1px}
+.waitlist-note{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.65);letter-spacing:1px}
 .waitlist-perks{display:flex;align-items:center;justify-content:center;gap:32px;margin-top:40px;flex-wrap:wrap}
-.waitlist-perk{display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.3);letter-spacing:1.5px;text-transform:uppercase}
+.waitlist-perk{display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.75);letter-spacing:1.5px;text-transform:uppercase}
 .waitlist-perk::before{content:'✓';color:var(--green)}
 .waitlist-success{display:none;text-align:center}
 .waitlist-success .big{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:var(--text);margin-bottom:8px}
 .waitlist-success .big span{color:var(--amber);font-style:italic}
-.waitlist-success p{font-size:15px;color:rgba(226,216,204,0.4)}
+.waitlist-success p{font-size:15px;color:rgba(226,216,204,0.62)}
 #form-error{display:none;margin-top:12px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#E06060;letter-spacing:.5px}
 
 /* ── FOOTER ─────────────────────────── */
 footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);flex-wrap:wrap;gap:16px}
-.footer-logo{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:rgba(226,216,204,0.4)}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:rgba(226,216,204,0.62)}
 .footer-logo span{color:var(--amber)}
 .footer-links{display:flex;gap:28px}
-.footer-link{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.55);letter-spacing:1.5px;text-transform:uppercase;text-decoration:none}
-.footer-copy{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.35);letter-spacing:1px}
+.footer-link{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.75);letter-spacing:1.5px;text-transform:uppercase;text-decoration:none}
+.footer-copy{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:rgba(226,216,204,0.6);letter-spacing:1px}
 
 /* ── REVEAL ──────────────────────────── */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.9s ease,transform 0.9s ease}
@@ -295,7 +295,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
   <div class="hero-trust">
     <div class="hero-trust-item">Backed by sleep science</div>
     <div class="hero-trust-item">iOS &amp; Android</div>
-    <div class="hero-trust-item">Launching 2026</div>
+    <div class="hero-trust-item">Launching 2025</div>
     <div class="hero-trust-item">Free to start</div>
   </div>
 
@@ -313,7 +313,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
     <div class="stat-grid reveal">
       <div class="stat-cell">
         <div class="stat-num">3<sup>×</sup></div>
-        <div class="stat-label">More likely to solve a problem after sleeping on it. Sleep restructures memory for insight not just consolidation.</div>
+        <div class="stat-label">More likely to solve a problem after sleeping on it. Sleep restructures memory for insight — not just consolidation.</div>
         <div class="stat-source">Wagner et al. · Nature · 2004</div>
       </div>
       <div class="stat-cell">
@@ -337,7 +337,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
   <div class="section-inner">
     <span class="mono-label" style="margin-bottom:20px">The experience</span>
     <h2>Three phases.<br>One seamless loop.</h2>
-    <p style="font-size:16px;color:rgba(226,216,204,0.45);max-width:480px;margin-top:16px;line-height:1.9;font-weight:300">Each night takes five minutes of your attention. Dream Director does the rest while you sleep.</p>
+    <p style="font-size:16px;color:rgba(226,216,204,0.65);max-width:480px;margin-top:16px;line-height:1.9;font-weight:300">Each night takes five minutes of your attention. Dream Director does the rest while you sleep.</p>
 
     <div class="how-phases">
       <div class="how-phase">
@@ -357,7 +357,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div class="how-phase">
         <div class="phase-num">03</div>
         <div class="phase-title">The Morning Insight</div>
-        <p class="phase-body">A prompt fires before anything else reaches you. Voice-log in 30 seconds. Dream Director transcribes, finds patterns, and delivers 3 observations. Over time it builds your Dream Language Profile symbols, themes, recurring imagery that are uniquely yours.</p>
+        <p class="phase-body">A prompt fires before anything else reaches you. Voice-log in 30 seconds. Dream Director transcribes, finds patterns, and delivers 3 observations. Over time it builds your Dream Language Profile — symbols, themes, recurring imagery that are uniquely yours.</p>
         <span class="phase-tag">3 min · Every morning</span>
       </div>
     </div>
@@ -370,19 +370,19 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
 <section class="dive reveal" id="dive">
   <div class="section-inner">
     <span class="mono-label" style="margin-bottom:20px">Every feature explained</span>
-    <h2>What the app actually does<br><em style="font-style:italic;color:rgba(226,216,204,0.5)"> and the science behind it.</em></h2>
-    <p style="font-size:16px;color:rgba(226,216,204,0.45);max-width:540px;margin-top:16px;line-height:1.9;font-weight:300">Every feature in Dream Director exists because a study proved it works. Here's all of them.</p>
+    <h2>What the app actually does<br><em style="font-style:italic;color:rgba(226,216,204,0.7)">— and the science behind it.</em></h2>
+    <p style="font-size:16px;color:rgba(226,216,204,0.65);max-width:540px;margin-top:16px;line-height:1.9;font-weight:300">Every feature in Dream Director exists because a study proved it works. Here's all of them.</p>
 
     <div class="dive-grid" style="margin-top:64px">
       <!-- Ritual generator -->
       <div class="dive-card reveal reveal-delay-1">
         <span class="dive-icon">🌙</span>
         <div class="dive-title">Ritual Generator</div>
-        <p class="dive-body">Before sleep, you tell Dream Director what you want to work on a creative block, a hard decision, emotional processing, athletic rehearsal, or one of 12 other intentions. You answer three questions. Dream Director generates a fully personalised 8–15 minute script using your exact words, images, and metaphors. No two rituals are identical. It's built around you, not a template.</p>
+        <p class="dive-body">Before sleep, you tell Dream Director what you want to work on — a creative block, a hard decision, emotional processing, athletic rehearsal, or one of 12 other intentions. You answer three questions. Dream Director generates a fully personalised 8–15 minute script using your exact words, images, and metaphors. No two rituals are identical. It's built around you, not a template.</p>
         <div class="dive-study">
           <span class="dive-study-ref">Deirdre Barrett · Harvard · Bulletin of the Menninger Clinic · 2001</span>
           <div class="dive-study-stat">70%</div>
-          <p class="dive-study-text">Subjects who concentrated on a specific problem before sleep reported dreams directly related to that problem in 70% of cases. The key variable was pre-sleep priming which is exactly what the ritual does.</p>
+          <p class="dive-study-text">Subjects who concentrated on a specific problem before sleep reported dreams directly related to that problem in 70% of cases. The key variable was pre-sleep priming — which is exactly what the ritual does.</p>
         </div>
       </div>
 
@@ -402,11 +402,11 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div class="dive-card reveal reveal-delay-1">
         <span class="dive-icon">✦</span>
         <div class="dive-title">Subliminal Intention Affirmations</div>
-        <p class="dive-body">After the ritual fades, personalised affirmations built from your exact intention continue cycling throughout the night at very low volume below conscious awareness but above the threshold for auditory processing. These are not generic affirmations. They're constructed from what you typed: your challenge, your desired outcome, your imagery. The brain doesn't switch off during sleep it processes auditory input continuously.</p>
+        <p class="dive-body">After the ritual fades, personalised affirmations built from your exact intention continue cycling throughout the night at very low volume — below conscious awareness but above the threshold for auditory processing. These are not generic affirmations. They're constructed from what you typed: your challenge, your desired outcome, your imagery. The brain doesn't switch off during sleep — it processes auditory input continuously.</p>
         <div class="dive-study">
           <span class="dive-study-ref">Züst et al. · Current Biology · 2019</span>
           <div class="dive-study-stat">Confirmed</div>
-          <p class="dive-study-text">The sleeping brain actively processes and encodes meaningful auditory information. Semantic content heard during sleep influences waking memory and behaviour sleep is not perceptual isolation.</p>
+          <p class="dive-study-text">The sleeping brain actively processes and encodes meaningful auditory information. Semantic content heard during sleep influences waking memory and behaviour — sleep is not perceptual isolation.</p>
         </div>
       </div>
 
@@ -414,7 +414,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div class="dive-card reveal reveal-delay-2">
         <span class="dive-icon">◎</span>
         <div class="dive-title">Targeted Memory Consolidation (TMC)</div>
-        <p class="dive-body">TMC is the scientific basis for the entire Dream Director concept. By pairing a learning cue with a specific scent or sound during waking, then replaying that cue during slow-wave sleep, researchers can reactivate and strengthen specific memory traces. Dream Director uses the same principle the sounds, words, and metaphors from your evening ritual are reintroduced as you drift into sleep and through the night, directing what gets consolidated.</p>
+        <p class="dive-body">TMC is the scientific basis for the entire Dream Director concept. By pairing a learning cue with a specific scent or sound during waking, then replaying that cue during slow-wave sleep, researchers can reactivate and strengthen specific memory traces. Dream Director uses the same principle — the sounds, words, and metaphors from your evening ritual are reintroduced as you drift into sleep and through the night, directing what gets consolidated.</p>
         <div class="dive-study">
           <span class="dive-study-ref">Haar Horowitz et al. · MIT Media Lab · Scientific Reports · 2020</span>
           <div class="dive-study-stat">TMC</div>
@@ -426,11 +426,11 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div class="dive-card reveal reveal-delay-1">
         <span class="dive-icon">◇</span>
         <div class="dive-title">Dream Language Profile</div>
-        <p class="dive-body">Universal dream dictionaries are scientifically meaningless. Water doesn't mean the same thing to you that it means to someone else. After 10+ sessions, Dream Director builds a personalised symbol dictionary from your own logs tracking which images, emotions, settings, and figures appear consistently, and correlating them with your intentions and outcomes. Over time it becomes a genuinely useful map of your unconscious. This is also the primary retention mechanism: it takes months to build and starts over from zero if you switch.</p>
+        <p class="dive-body">Universal dream dictionaries are scientifically meaningless. Water doesn't mean the same thing to you that it means to someone else. After 10+ sessions, Dream Director builds a personalised symbol dictionary from your own logs — tracking which images, emotions, settings, and figures appear consistently, and correlating them with your intentions and outcomes. Over time it becomes a genuinely useful map of your unconscious. This is also the primary retention mechanism: it takes months to build and starts over from zero if you switch.</p>
         <div class="dive-study">
           <span class="dive-study-ref">Domhoff · Journal of Sleep Research · 2003</span>
           <div class="dive-study-stat">Personal</div>
-          <p class="dive-study-text">Longitudinal dream analysis shows that individual dream content is highly consistent over time and uniquely personal. Recurring symbols and themes are meaningful precisely because they are idiosyncratic not universal.</p>
+          <p class="dive-study-text">Longitudinal dream analysis shows that individual dream content is highly consistent over time and uniquely personal. Recurring symbols and themes are meaningful precisely because they are idiosyncratic — not universal.</p>
         </div>
       </div>
 
@@ -442,7 +442,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
         <div class="dive-study">
           <span class="dive-study-ref">Stickgold et al. · Science · 2001</span>
           <div class="dive-study-stat">2 min</div>
-          <p class="dive-study-text">Dream content fades rapidly upon waking most is lost within 2 minutes without active capture. Waking from REM sleep (light sleep) produces significantly higher dream recall than waking from deep slow-wave sleep.</p>
+          <p class="dive-study-text">Dream content fades rapidly upon waking — most is lost within 2 minutes without active capture. Waking from REM sleep (light sleep) produces significantly higher dream recall than waking from deep slow-wave sleep.</p>
         </div>
       </div>
     </div>
@@ -452,7 +452,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div class="dive-card reveal">
         <span class="dive-icon">🧠</span>
         <div class="dive-title">Sleep & Problem Solving</div>
-        <p class="dive-body" style="font-size:13px">The hippocampus replays waking experiences during sleep and tests combinations that would be unlikely during conscious thought. This is why "sleeping on it" is not a metaphor it's a documented cognitive process that produces solutions not available while awake.</p>
+        <p class="dive-body" style="font-size:13px">The hippocampus replays waking experiences during sleep and tests combinations that would be unlikely during conscious thought. This is why "sleeping on it" is not a metaphor — it's a documented cognitive process that produces solutions not available while awake.</p>
         <div class="dive-study">
           <span class="dive-study-ref">Wagner et al. · Nature · 2004</span>
           <div class="dive-study-stat">3×</div>
@@ -472,11 +472,11 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div class="dive-card reveal reveal-delay-2">
         <span class="dive-icon">🌊</span>
         <div class="dive-title">Emotional Processing During Sleep</div>
-        <p class="dive-body" style="font-size:13px">REM sleep strips the emotional charge from difficult memories while preserving their informational content. This is why the same event feels less raw the morning after. Dream Director uses this window deliberately  by setting an intention around emotional processing, the ritual seeds the specific material that needs to be worked through.</p>
+        <p class="dive-body" style="font-size:13px">REM sleep strips the emotional charge from difficult memories while preserving their informational content. This is why the same event feels less raw the morning after. Dream Director uses this window deliberately — by setting an intention around emotional processing, the ritual seeds the specific material that needs to be worked through.</p>
         <div class="dive-study">
           <span class="dive-study-ref">Walker · Why We Sleep · Scribner · 2017</span>
           <div class="dive-study-stat">REM</div>
-          <p class="dive-study-text">REM sleep acts as a form of overnight emotional therapy. Norepinephrine (the stress neurochemical) drops to zero during REM the only time in the 24-hour cycle allowing re-processing of emotional memories without their original charge.</p>
+          <p class="dive-study-text">REM sleep acts as a form of overnight emotional therapy. Norepinephrine (the stress neurochemical) drops to zero during REM — the only time in the 24-hour cycle — allowing re-processing of emotional memories without their original charge.</p>
         </div>
       </div>
     </div>
@@ -498,7 +498,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
           <div class="study-authors">Wagner, Gais, Haider, Verleger, Born</div>
         </div>
         <div class="study-col">
-          <p class="study-finding">Participants were 3× more likely to find a hidden solution after sleep compared to equivalent waking time. Sleep-dependent memory restructuring actively reorganises information for insight. This is the direct scientific basis for using sleep as a problem-solving tool the core thesis of Dream Director.</p>
+          <p class="study-finding">Participants were 3× more likely to find a hidden solution after sleep compared to equivalent waking time. Sleep-dependent memory restructuring actively reorganises information for insight. This is the direct scientific basis for using sleep as a problem-solving tool — the core thesis of Dream Director.</p>
         </div>
         <div class="study-col">
           <span class="study-stat-big">3×</span>
@@ -524,7 +524,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
           <div class="study-authors">Haar Horowitz, Carr, Hilario, Alam · Scientific Reports</div>
         </div>
         <div class="study-col">
-          <p class="study-finding">Using the Dormio device, researchers delivered targeted audio cues during the hypnagogic state (falling asleep). Dream content measurably incorporated the prompted theme. This is the direct scientific proof that dream content is externally guidable the entire premise of the platform.</p>
+          <p class="study-finding">Using the Dormio device, researchers delivered targeted audio cues during the hypnagogic state (falling asleep). Dream content measurably incorporated the prompted theme. This is the direct scientific proof that dream content is externally guidable — the entire premise of the platform.</p>
         </div>
         <div class="study-col">
           <span class="study-stat-big">TMC</span>
@@ -537,7 +537,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
           <div class="study-authors">Züst, Ruch, Wiest, Henke</div>
         </div>
         <div class="study-col">
-          <p class="study-finding">The sleeping brain continues to process and encode semantic (meaningful) auditory information. Words heard during sleep were later recalled and influenced waking behaviour. The brain does not enter perceptual isolation during sleep it filters and processes. Basis for subliminal affirmations.</p>
+          <p class="study-finding">The sleeping brain continues to process and encode semantic (meaningful) auditory information. Words heard during sleep were later recalled and influenced waking behaviour. The brain does not enter perceptual isolation during sleep — it filters and processes. Basis for subliminal affirmations.</p>
         </div>
         <div class="study-col">
           <span class="study-stat-big">Active</span>
@@ -576,7 +576,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
           <div class="study-authors">Walker &amp; Stickgold</div>
         </div>
         <div class="study-col">
-          <p class="study-finding">Sleep-dependent motor memory consolidation improves procedural performance by 20–30% over waking rest alone. Elite athletes who sleep after practice outperform those who don't. The improvement is specific to what was practised not a general overnight effect.</p>
+          <p class="study-finding">Sleep-dependent motor memory consolidation improves procedural performance by 20–30% over waking rest alone. Elite athletes who sleep after practice outperform those who don't. The improvement is specific to what was practised — not a general overnight effect.</p>
         </div>
         <div class="study-col">
           <span class="study-stat-big">+30%</span>
@@ -589,7 +589,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
           <div class="study-authors">Matthew Walker · Scribner</div>
         </div>
         <div class="study-col">
-          <p class="study-finding">During REM sleep, norepinephrine (the primary stress neurochemical) drops to zero the only time in the 24-hour cycle. This creates a neurochemical environment in which emotional memories can be re-processed and their charge reduced. REM is overnight emotional therapy. Basis for the emotional processing intention category.</p>
+          <p class="study-finding">During REM sleep, norepinephrine (the primary stress neurochemical) drops to zero — the only time in the 24-hour cycle. This creates a neurochemical environment in which emotional memories can be re-processed and their charge reduced. REM is overnight emotional therapy. Basis for the emotional processing intention category.</p>
         </div>
         <div class="study-col">
           <span class="study-stat-big">0</span>
@@ -615,7 +615,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
           <div class="study-authors">Aristotle</div>
         </div>
         <div class="study-col">
-          <p class="study-finding">The first documented description of dream incubation the deliberate practice of directing sleep toward a specific question or intention. The ancient Greeks, Egyptians, and Romans all practised systematic forms of dream direction. Dream Director is the first product to systematise what humans have known for 2,000 years.</p>
+          <p class="study-finding">The first documented description of dream incubation — the deliberate practice of directing sleep toward a specific question or intention. The ancient Greeks, Egyptians, and Romans all practised systematic forms of dream direction. Dream Director is the first product to systematise what humans have known for 2,000 years.</p>
         </div>
         <div class="study-col">
           <span class="study-stat-big">350<span style="font-size:0.35em"> BCE</span></span>
@@ -632,8 +632,8 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
 <section class="pricing reveal" id="pricing">
   <div class="section-inner">
     <span class="mono-label" style="margin-bottom:20px">Pricing</span>
-    <h2>Simple, transparent<br><em style="font-style:italic;color:rgba(226,216,204,0.5)">pricing.</em></h2>
-    <p style="font-size:16px;color:rgba(226,216,204,0.45);max-width:520px;margin-top:16px;line-height:1.9;font-weight:300">These are our planned prices — the app isn't live yet. Join the waitlist to lock in founding member rates. If you'd like to support the project right now, we'd be incredibly grateful.</p>
+    <h2>Simple, transparent<br><em style="font-style:italic;color:rgba(226,216,204,0.7)">pricing.</em></h2>
+    <p style="font-size:16px;color:rgba(226,216,204,0.65);max-width:520px;margin-top:16px;line-height:1.9;font-weight:300">These are our planned prices — the app isn't live yet. Join the waitlist to lock in founding member rates. If you'd like to support the project right now, we'd be incredibly grateful.</p>
 
     <div class="pricing-grid">
       <!-- Free -->
@@ -647,7 +647,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <span class="pf-check">✓</span>
             <span class="pf-label">3 ritual sessions / month</span>
             <span class="pf-expand-icon">+</span>
-            <div class="pf-desc">Three full evening rituals per month enough to have your first real directed dream experience and see how the morning insight card works.</div>
+            <div class="pf-desc">Three full evening rituals per month — enough to have your first real directed dream experience and see how the morning insight card works.</div>
           </div>
           <div class="pf expandable" onclick="togglePf(this)">
             <span class="pf-check">✓</span>
@@ -671,7 +671,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <span class="pf-check">✓</span>
             <span class="pf-label">Basic morning insight</span>
             <span class="pf-expand-icon">+</span>
-            <div class="pf-desc">A single observation delivered each morning a gentle reflection on what your dream may have surfaced.</div>
+            <div class="pf-desc">A single observation delivered each morning — a gentle reflection on what your dream may have surfaced.</div>
           </div>
           <div class="pf expandable" onclick="togglePf(this)">
             <span class="pf-check">✓</span>
@@ -698,7 +698,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <div class="pf-desc">Not included in Free. Upgrade to Dreamer to unlock your personal symbol dictionary built from your own sessions.</div>
           </div>
         </div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.2);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.65);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
       </div>
 
       <!-- Sleep -->
@@ -757,7 +757,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <div class="pf-desc">Not included in Sleep. Upgrade to Dreamer for weekly summaries of your patterns and progress.</div>
           </div>
         </div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.2);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.65);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
         <div class="price-note">Save 33% · $39.99/year</div>
       </div>
 
@@ -772,7 +772,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <span class="pf-check">✓</span>
             <span class="pf-label">Everything in Sleep</span>
             <span class="pf-expand-icon">+</span>
-            <div class="pf-desc">All features from the Sleep plan unlimited sessions, binaural beats (all modes), and custom soundscapes fully included.</div>
+            <div class="pf-desc">All features from the Sleep plan — unlimited sessions, binaural beats (all modes), and custom soundscapes — fully included.</div>
           </div>
           <div class="pf expandable" onclick="togglePf(this)">
             <span class="pf-check">✓</span>
@@ -784,7 +784,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <span class="pf-check">✓</span>
             <span class="pf-label">Dream Language Profile</span>
             <span class="pf-expand-icon">+</span>
-            <div class="pf-desc">After around 10 sessions, Dream Director builds your personal symbol dictionary tracking which images, emotions, and figures appear consistently and what they tend to mean for you specifically.</div>
+            <div class="pf-desc">After around 10 sessions, Dream Director builds your personal symbol dictionary — tracking which images, emotions, and figures appear consistently and what they tend to mean for you specifically.</div>
           </div>
           <div class="pf expandable" onclick="togglePf(this)">
             <span class="pf-check">✓</span>
@@ -802,7 +802,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <span class="pf-check">✓</span>
             <span class="pf-label">Pattern recognition</span>
             <span class="pf-expand-icon">+</span>
-            <div class="pf-desc">Dream Director spots recurring themes across your sessions — not just single dreams, but patterns across weeks and surfaces them in your morning cards.</div>
+            <div class="pf-desc">Dream Director spots recurring themes across your sessions — not just single dreams, but patterns across weeks — and surfaces them in your morning cards.</div>
           </div>
           <div class="pf expandable" onclick="togglePf(this)">
             <span class="pf-check">✓</span>
@@ -817,7 +817,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <div class="pf-desc">Not included in Dreamer. Upgrade to Director for real-time conversation before bed to refine your ritual live.</div>
           </div>
         </div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.2);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.65);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
         <div class="price-note">Save 33% · $79.99/year</div>
       </div>
 
@@ -832,7 +832,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <span class="pf-check">✓</span>
             <span class="pf-label">Everything in Dreamer</span>
             <span class="pf-expand-icon">+</span>
-            <div class="pf-desc">Every feature from Dreamer voice audio, Dream Language Profile, weekly reports, wearable sync, pattern recognition, and full morning insight cards — fully included.</div>
+            <div class="pf-desc">Every feature from Dreamer — voice audio, Dream Language Profile, weekly reports, wearable sync, pattern recognition, and full morning insight cards — fully included.</div>
           </div>
           <div class="pf expandable" onclick="togglePf(this)">
             <span class="pf-check">✓</span>
@@ -844,7 +844,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <span class="pf-check">✓</span>
             <span class="pf-label">Multi-night Dream Series</span>
             <span class="pf-expand-icon">+</span>
-            <div class="pf-desc">For complex problems or emotional work that needs more than one night. Set a 3–7 night arc each ritual builds on the last, deepening rather than repeating.</div>
+            <div class="pf-desc">For complex problems or emotional work that needs more than one night. Set a 3–7 night arc — each ritual builds on the last, deepening rather than repeating.</div>
           </div>
           <div class="pf expandable" onclick="togglePf(this)">
             <span class="pf-check">✓</span>
@@ -877,7 +877,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
             <div class="pf-desc">New features go to Director members first — sometimes weeks before anyone else. We also reach out to Director members directly when deciding what to build next.</div>
           </div>
         </div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.2);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(226,216,204,0.65);padding:14px 0;text-align:center;border:1px solid rgba(226,216,204,0.07);border-radius:2px;">Available at launch</div>
         <div class="price-note">Save 33% · $119.99/year</div>
       </div>
     </div>
@@ -889,7 +889,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div style="background:#06040A;padding:36px 36px">
         <div style="font-size:22px;margin-bottom:12px">◎</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:#E2D8CC;margin-bottom:10px">Got a question?</div>
-        <div style="font-size:13px;color:rgba(226,216,204,0.4);line-height:1.8;margin-bottom:20px;font-weight:300">Curious about how it works, the science behind it, or anything else — we're genuinely happy to talk.</div>
+        <div style="font-size:13px;color:rgba(226,216,204,0.62);line-height:1.8;margin-bottom:20px;font-weight:300">Curious about how it works, the science behind it, or anything else — we're genuinely happy to talk.</div>
         <a href="mailto:hello@dreamdirector.app?subject=Question about Dream Director" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C4883A;text-decoration:none;border:1px solid rgba(196,136,58,0.3);padding:10px 18px;border-radius:2px;transition:all 0.2s">
           Ask us anything →
         </a>
@@ -899,7 +899,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div style="background:#06040A;padding:36px 36px">
         <div style="font-size:22px;margin-bottom:12px">◇</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:#E2D8CC;margin-bottom:10px">Press &amp; partnerships</div>
-        <div style="font-size:13px;color:rgba(226,216,204,0.4);line-height:1.8;margin-bottom:20px;font-weight:300">Writing about sleep, wellness, or dream science? Want to collaborate? We'd love to hear from you.</div>
+        <div style="font-size:13px;color:rgba(226,216,204,0.62);line-height:1.8;margin-bottom:20px;font-weight:300">Writing about sleep, wellness, or dream science? Want to collaborate? We'd love to hear from you.</div>
         <a href="mailto:hello@dreamdirector.app?subject=Press enquiry" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C4883A;text-decoration:none;border:1px solid rgba(196,136,58,0.3);padding:10px 18px;border-radius:2px;transition:all 0.2s">
           Get in touch →
         </a>
@@ -909,7 +909,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
       <div style="background:#06040A;padding:36px 36px">
         <div style="font-size:22px;margin-bottom:12px">✦</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:#E2D8CC;margin-bottom:10px">Anything else</div>
-        <div style="font-size:13px;color:rgba(226,216,204,0.4);line-height:1.8;margin-bottom:20px;font-weight:300">Feedback, ideas, thoughts about the product — we read everything and reply to almost all of it.</div>
+        <div style="font-size:13px;color:rgba(226,216,204,0.62);line-height:1.8;margin-bottom:20px;font-weight:300">Feedback, ideas, thoughts about the product — we read everything and reply to almost all of it.</div>
         <a href="mailto:hello@dreamdirector.app" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C4883A;text-decoration:none;border:1px solid rgba(196,136,58,0.3);padding:10px 18px;border-radius:2px;transition:all 0.2s">
           Get in touch →
         </a>
@@ -925,34 +925,34 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
 <section class="reveal" style="padding:120px 0">
   <div class="section-inner">
     <span class="mono-label" style="margin-bottom:20px">Founder beta</span>
-    <h2>Be among the first<br><em style="font-style:italic;color:rgba(226,216,204,0.5)">to experience it.</em></h2>
-    <p style="font-size:17px;color:rgba(226,216,204,0.45);max-width:520px;margin-top:16px;line-height:1.9;font-weight:300">Dream Director doesn't have public reviews yet because it isn't out yet. The beta is coming, and it's exclusively for people on the waitlist.</p>
+    <h2>Be among the first<br><em style="font-style:italic;color:rgba(226,216,204,0.7)">to experience it.</em></h2>
+    <p style="font-size:17px;color:rgba(226,216,204,0.65);max-width:520px;margin-top:16px;line-height:1.9;font-weight:300">Dream Director doesn't have public reviews yet — because it isn't out yet. The beta is coming, and it's exclusively for people on the waitlist.</p>
 
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:64px">
 
       <div style="padding:44px 38px;background:var(--bg)" class="reveal reveal-delay-1">
         <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--amber);line-height:1;margin-bottom:16px">01</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--text);margin-bottom:14px">Join the waitlist</div>
-        <p style="font-size:14px;color:rgba(226,216,204,0.45);line-height:1.85;font-weight:300">Add your email below. That's it. You're in the queue. We'll never spam you one email when beta opens, that's all.</p>
+        <p style="font-size:14px;color:rgba(226,216,204,0.65);line-height:1.85;font-weight:300">Add your email below. That's it. You're in the queue. We'll never spam you — one email when beta opens, that's all.</p>
       </div>
 
       <div style="padding:44px 38px;background:var(--bg)" class="reveal reveal-delay-2">
         <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--amber);line-height:1;margin-bottom:16px">02</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--text);margin-bottom:14px">Get whitelisted</div>
-        <p style="font-size:14px;color:rgba(226,216,204,0.45);line-height:1.85;font-weight:300">Waitlist members get priority access to the closed founder beta before it opens to anyone else. Your spot is held from the moment you sign up.</p>
+        <p style="font-size:14px;color:rgba(226,216,204,0.65);line-height:1.85;font-weight:300">Waitlist members get priority access to the closed founder beta before it opens to anyone else. Your spot is held from the moment you sign up.</p>
       </div>
 
       <div style="padding:44px 38px;background:var(--bg)" class="reveal reveal-delay-3">
         <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--amber);line-height:1;margin-bottom:16px">03</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--text);margin-bottom:14px">Shape the product</div>
-        <p style="font-size:14px;color:rgba(226,216,204,0.45);line-height:1.85;font-weight:300">Founder beta members get a direct line to the team. Your feedback shapes what gets built. You're not a user you're part of how this becomes what it's meant to be.</p>
+        <p style="font-size:14px;color:rgba(226,216,204,0.65);line-height:1.85;font-weight:300">Founder beta members get a direct line to the team. Your feedback shapes what gets built. You're not a user — you're part of how this becomes what it's meant to be.</p>
       </div>
     </div>
 
     <div style="margin-top:48px;padding:48px;background:rgba(196,136,58,0.05);border:1px solid rgba(196,136,58,0.15);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px" class="reveal">
       <div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--text);margin-bottom:8px">The beta is coming.<br><em style="font-style:italic;color:rgba(226,216,204,0.5)">Your name should be on it.</em></div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.3);letter-spacing:2px;text-transform:uppercase">Founder pricing · 50% off · locked forever</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--text);margin-bottom:8px">The beta is coming.<br><em style="font-style:italic;color:rgba(226,216,204,0.7)">Your name should be on it.</em></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.75);letter-spacing:2px;text-transform:uppercase">Founder pricing · 50% off · locked forever</div>
       </div>
       <a href="#waitlist" class="btn-primary" style="white-space:nowrap">
         Reserve my spot
@@ -968,7 +968,7 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
 <section class="faq reveal" id="faq">
   <div class="section-inner">
     <span class="mono-label" style="margin-bottom:20px">Questions</span>
-    <h2>Everything you<br><em style="font-style:italic;color:rgba(226,216,204,0.5)">want to know.</em></h2>
+    <h2>Everything you<br><em style="font-style:italic;color:rgba(226,216,204,0.7)">want to know.</em></h2>
 
     <div class="faq-list" style="margin-top:56px">
       <div class="faq-item">
@@ -976,56 +976,56 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
           <span class="faq-q-text">Does this actually work, or is it just vibes?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">It's backed by peer-reviewed science specifically Barrett (Harvard, 2001), Wagner et al. (Nature, 2004), and Haar Horowitz et al. (MIT, 2020). The short version: the brain continues processing during sleep, pre-sleep priming measurably influences dream content, and sleeping on a specific problem produces better outcomes than equivalent waking time. That said, Dream Director is a tool not a guarantee. Results vary by person, by intention, and by how consistently you use it. The science gives it a genuine mechanism. The rest depends on you.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">It's backed by peer-reviewed science — specifically Barrett (Harvard, 2001), Wagner et al. (Nature, 2004), and Haar Horowitz et al. (MIT, 2020). The short version: the brain continues processing during sleep, pre-sleep priming measurably influences dream content, and sleeping on a specific problem produces better outcomes than equivalent waking time. That said, Dream Director is a tool — not a guarantee. Results vary by person, by intention, and by how consistently you use it. The science gives it a genuine mechanism. The rest depends on you.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text">What if I don't remember my dreams?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Most people don't remember their dreams because they've never had an immediate capture prompt before their phone pulls their attention elsewhere. Dream Director fires a capture prompt the moment the alarm goes off before notifications, before anything. Even people who "never dream" typically recall fragments within 30 seconds of waking when prompted. Dream Director works with fragments: a feeling, a colour, a face, a single image. You don't need a narrative. The smart alarm also wakes you from light sleep (REM) rather than deep sleep, which dramatically improves recall.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Most people don't remember their dreams because they've never had an immediate capture prompt before their phone pulls their attention elsewhere. Dream Director fires a capture prompt the moment the alarm goes off — before notifications, before anything. Even people who "never dream" typically recall fragments within 30 seconds of waking when prompted. Dream Director works with fragments: a feeling, a colour, a face, a single image. You don't need a narrative. The smart alarm also wakes you from light sleep (REM) rather than deep sleep, which dramatically improves recall.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text">How is this different from Calm or Headspace?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Calm and Headspace are designed to get you to sleep they work at bedtime and stop there. Dream Director works <em>during</em> sleep. It's a completely different category. Think of it this way: Calm is the on-ramp. Dream Director is what happens on the highway. The evening ritual might look similar on the surface, but the intention-seeding, the binaural audio layer that runs all night, the morning capture, and the Dream Language Profile that builds over time are all things that have no equivalent in existing meditation apps.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Calm and Headspace are designed to get you to sleep — they work at bedtime and stop there. Dream Director works <em>during</em> sleep. It's a completely different category. Think of it this way: Calm is the on-ramp. Dream Director is what happens on the highway. The evening ritual might look similar on the surface, but the intention-seeding, the binaural audio layer that runs all night, the morning capture, and the Dream Language Profile that builds over time are all things that have no equivalent in existing meditation apps.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text">What are binaural beats and do they actually do anything?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Binaural beats work by playing two slightly different frequencies one in each ear. The brain perceives the difference between them as a third frequency and begins to synchronise to it, a process called brainwave entrainment. A 2019 meta-analysis of 22 studies (Garcia-Argibay et al.) found significant cognitive effects particularly for theta-band beats and memory consolidation. Dream Director uses theta (6Hz) for creativity and REM dreaming, delta (2.5Hz) for deep restorative sleep, alpha (10Hz) for the evening ritual's relaxation phase, and gamma (40Hz) for the learning intention. You need stereo headphones or earbuds for them to work.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Binaural beats work by playing two slightly different frequencies — one in each ear. The brain perceives the difference between them as a third frequency and begins to synchronise to it, a process called brainwave entrainment. A 2019 meta-analysis of 22 studies (Garcia-Argibay et al.) found significant cognitive effects — particularly for theta-band beats and memory consolidation. Dream Director uses theta (6Hz) for creativity and REM dreaming, delta (2.5Hz) for deep restorative sleep, alpha (10Hz) for the evening ritual's relaxation phase, and gamma (40Hz) for the learning intention. You need stereo headphones or earbuds for them to work.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text">Is my dream data private?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Dream logs are end-to-end encrypted and stored under your account only. We will never sell your dream data or share it with advertisers. You can export your complete history at any time and delete everything permanently with a single button. All analysis runs on your data but the raw content stays with you. We'll publish a plain-English privacy policy before launch not a 14-page document written by lawyers.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Dream logs are end-to-end encrypted and stored under your account only. We will never sell your dream data or share it with advertisers. You can export your complete history at any time and delete everything permanently with a single button. All analysis runs on your data but the raw content stays with you. We'll publish a plain-English privacy policy before launch — not a 14-page document written by lawyers.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text">When does it launch and what does the waitlist get me?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">We're targeting a 2026 launch on iOS and Android simultaneously. Waitlist members get three things: early access before public launch, founding member pricing at 50% off the Dreamer tier locked forever (not just year one), and a direct line to the product team we'll be reaching out to early members to test features, give feedback, and shape what gets built. No spam. One email when we launch, occasional updates if something major happens.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">We're targeting a 2025 launch on iOS and Android simultaneously. Waitlist members get three things: early access before public launch, founding member pricing at 50% off the Dreamer tier locked forever (not just year one), and a direct line to the product team — we'll be reaching out to early members to test features, give feedback, and shape what gets built. No spam. One email when we launch, occasional updates if something major happens.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text">Do I need a wearable?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">No. Dream Director works entirely without a wearable. If you have an Apple Watch, Oura Ring, Whoop, or Garmin, you can connect it through Apple Health or Google Health Connect to automatically pull in sleep data stages, HRV, heart rate, time asleep. But if you don't, the app still works: you report how you slept manually each morning, which takes 10 seconds. The core features ritual generation, binaural audio, dream logging, insight cards are all completely independent of hardware.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">No. Dream Director works entirely without a wearable. If you have an Apple Watch, Oura Ring, Whoop, or Garmin, you can connect it through Apple Health or Google Health Connect to automatically pull in sleep data — stages, HRV, heart rate, time asleep. But if you don't, the app still works: you report how you slept manually each morning, which takes 10 seconds. The core features — ritual generation, binaural audio, dream logging, insight cards — are all completely independent of hardware.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text">What if I don't notice any change after a week?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">One week is short. Barrett's research suggests meaningful effects typically appear within 2–4 weeks of consistent use. The Dream Language Profile doesn't start generating real insight until session 8–10. If you've used it consistently for 30 days and noticed nothing email us directly. We genuinely want to hear about it. Your experience tells us something important about the product, and that feedback shapes what we build next.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">One week is short. Barrett's research suggests meaningful effects typically appear within 2–4 weeks of consistent use. The Dream Language Profile doesn't start generating real insight until session 8–10. If you've used it consistently for 30 days and noticed nothing — email us directly. We genuinely want to hear about it. Your experience tells us something important about the product, and that feedback shapes what we build next.</div></div>
       </div>
     </div>
   </div>
@@ -1038,8 +1038,8 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
   <div class="waitlist-orb"></div>
   <div class="section-inner" style="position:relative">
     <div class="waitlist-count reveal" id="waitlist-count">Joining now</div>
-    <h2 class="reveal">Your first night<br><em style="font-style:italic;color:rgba(226,216,204,0.5)">is waiting.</em></h2>
-    <p class="waitlist-sub reveal">Join the waitlist. Founding members get lifetime access at 50% off locked forever, not just year one.</p>
+    <h2 class="reveal">Your first night<br><em style="font-style:italic;color:rgba(226,216,204,0.7)">is waiting.</em></h2>
+    <p class="waitlist-sub reveal">Join the waitlist. Founding members get lifetime access at 50% off — locked forever, not just year one.</p>
 
     <div id="form-wrap" class="reveal">
       <div class="waitlist-form">
@@ -1053,13 +1053,13 @@ footer{padding:48px 56px;display:flex;align-items:center;justify-content:space-b
     <div class="waitlist-success" id="success-msg">
       <div class="big">You're on the list. <span>🌙</span></div>
       <p>A confirmation email is on its way.</p>
-      <p style="margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.3);letter-spacing:1px;">Can't find it? Check your spam or promotions folder it sometimes lands there.</p>
+      <p style="margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.75);letter-spacing:1px;">Can't find it? Check your spam or promotions folder — it sometimes lands there.</p>
     </div>
 
     <div class="waitlist-success" id="already-msg">
       <div class="big">Already on it. <span>🌙</span></div>
-      <p>That email is already on the waitlist, you're good.</p>
-      <p style="margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.3);letter-spacing:1px;">We'll be in touch when Dream Director launches.</p>
+      <p>That email is already on the waitlist — you're good.</p>
+      <p style="margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(226,216,204,0.75);letter-spacing:1px;">We'll be in touch when Dream Director launches.</p>
     </div>
 
     <div class="waitlist-perks reveal" style="margin-top:48px">
